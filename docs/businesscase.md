@@ -14,6 +14,7 @@
 7. [Previsão de entregas](#previsão-das-Principais-Entregas)
 
 #### Controle de versões
+
 |Versão|Data|Autor|Notas da Revisão|
 |:---:|:---:|:---:|:---:|
 |V1|12/08/2024|João Victor B.C Teixeira, Lucas Oliveira Ketelhut, Leonardo Marques Ferreira, Rafael Alves Cardoso|Primeira versão|
@@ -49,6 +50,7 @@ O mercado de aplicativos para pré-vestibulandos é bastante competitivo, com di
 Nosso aplicativo se destaca por oferecer uma experiência de estudo completamente personalizada, com planos de estudo adaptados às necessidades e preferências de cada aluno, criados por algoritmos de inteligência artificial. Além disso, contamos com uma comunidade exclusiva de mentores, formada por estudantes aprovados nas melhores universidades, que oferecem suporte individualizado e acompanhamento durante todo o processo. A integração com outras ferramentas e a organização de eventos online complementam nossa proposta, visando oferecer uma solução completa e eficaz para os pré-vestibulandos.
 
 ### Previsão das Principais Entregas
+
 |Fase|Atividades|Estimativa|
 |---|---|---|
 |Planejamento/Análise|Entendendo o problema, Visão Geral do Sistema, Análise de Viabilidade|16/09/2024|
@@ -56,6 +58,7 @@ Nosso aplicativo se destaca por oferecer uma experiência de estudo completament
 Um planejamento inadequado resulta em um desenvolvimento com base em informações erradas, aumentando custos e tempo. Além disso, a falta de uma visão clara dificulta a estimativa de prazos e recursos, levando a orçamentos inflacionados e atrasos na entrega. Consequentemente, o escopo do projeto pode mudar constantemente, a comunicação entre a equipe fica comprometida e a identificação de riscos é prejudicada. Em resumo, um início atrasado ou mal planejado pode comprometer todo o projeto, resultando em um produto final de menor qualidade e entregue fora do prazo.
 
 #### Aprovações
+
 |Participante|Assinatura|Data|
 |---|---|---|
 |Patrocinador|||
