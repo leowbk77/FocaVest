@@ -1,7 +1,6 @@
 # FocaVest
 
-[![FocaVest]()](https://leowbk77.github.io/FocaVest/)
-
+[↩ FocaVest](https://leowbk77.github.io/FocaVest/)
 
 ## _Business Case_
 ### Sumário
