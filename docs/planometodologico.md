@@ -70,20 +70,19 @@ Cabe ao gerente do projeto unificar essas “sub-equipes”, tendo uma visão ma
 #### Papéis
 
 <pre class="mermaid">
-flowchart LR;
-    subgraph "**Gerente de Projeto**"
-        direction TD
-        a(Elaborar o plano de projeto)
-        b(Gerenciar o escopo)
-        c(Gerenciar riscos)
-        d(Gerenciamento de equipe)
-        e(Monitoramento do progresso)
-        f(Gerenciamento de qualidade)
-        g(Garantir a integração entre as diferentes equipes)
-        h(Monitorar o progresso das entregas parciais)
-        i(Gerenciar as expectativas dos estudantes)
-        j(Adaptar o projeto às necessidades dos estudantes)
-    end
+flowchart TD;
+subgraph "**Gerente de Projeto**"
+direction TD
+a(Elaborar o plano de projeto)
+b(Gerenciar o escopo)
+c(Gerenciar riscos)
+d(Gerenciamento de equipe)
+e(Monitoramento do progresso)
+f(Gerenciamento de qualidade)
+g(Garantir a integração entre as diferentes equipes)
+h(Monitorar o progresso das entregas parciais)
+i(Gerenciar as expectativas dos estudantes)
+j(Adaptar o projeto às necessidades dos estudantes)
 end
 </pre>
 
