@@ -70,18 +70,19 @@ Cabe ao gerente do projeto unificar essas “sub-equipes”, tendo uma visão ma
 #### Papéis
 
 <pre class="mermaid">
-flowchart TD;
-subgraph "**Gerente de Projeto**"
-a(Elaborar o plano de projeto)
-b(Gerenciar o escopo)
-c(Gerenciar riscos)
-d(Gerenciamento de equipe)
-e(Monitoramento do progresso)
-f(Gerenciamento de qualidade)
-g(Garantir a integração entre as diferentes equipes)
-h(Monitorar o progresso das entregas parciais)
-i(Gerenciar as expectativas dos estudantes)
-j(Adaptar o projeto às necessidades dos estudantes)
+flowchart LR;
+    subgraph "**Gerente de Projeto**"
+        direction TD
+        a(Elaborar o plano de projeto)
+        b(Gerenciar o escopo)
+        c(Gerenciar riscos)
+        d(Gerenciamento de equipe)
+        e(Monitoramento do progresso)
+        f(Gerenciamento de qualidade)
+        g(Garantir a integração entre as diferentes equipes)
+        h(Monitorar o progresso das entregas parciais)
+        i(Gerenciar as expectativas dos estudantes)
+        j(Adaptar o projeto às necessidades dos estudantes)
 end
 </pre>
 
@@ -122,7 +123,6 @@ Durante todo o processo estaremos realizando procedimentos de melhorias e corre�
 <script type="module">
 	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 	mermaid.initialize({
-		startOnLoad: true,
-		theme: 'dark'
+		startOnLoad: true
 	});
 </script>
