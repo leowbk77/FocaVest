@@ -83,6 +83,7 @@ flowchart LR;
         h(Monitorar o progresso das entregas parciais)
         i(Gerenciar as expectativas dos estudantes)
         j(Adaptar o projeto às necessidades dos estudantes)
+    end
 end
 </pre>
 
