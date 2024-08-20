@@ -22,7 +22,7 @@ Histórico de Revisão
 
 ### Introdução
 #### Propósito
-Este documento determina o escopo de alto nível e propósito do projeto FocaVest, permitindo a compreensão da ideia e alinhamento de expectativas, reduzindo riscos e facilitando o processo de planejamento/análise e desenvolvimento.
+Este documento determina o escopo de alto nível e propósito do projeto, permitindo a compreensão da ideia e alinhamento de expectativas, reduzindo riscos e facilitando o processo de planejamento/análise e desenvolvimento.
 #### Escopo
 O projeto FocaVest tem a finalidade de desenvolver uma plataforma que auxilie estudantes vestibulandos no seu processo de preparação ................. 
 #### Definições, acrônimos e abreviações
