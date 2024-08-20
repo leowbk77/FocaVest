@@ -69,7 +69,7 @@ Cabe ao gerente do projeto unificar essas “sub-equipes”, tendo uma visão ma
 
 #### Papéis
 
-```mermaid
+<pre class="mermaid">
 flowchart TD;
 subgraph "**Gerente de Projeto**"
 a(Elaborar o plano de projeto)
@@ -83,7 +83,7 @@ h(Monitorar o progresso das entregas parciais)
 i(Gerenciar as expectativas dos estudantes)
 j(Adaptar o projeto às necessidades dos estudantes)
 end
-```
+</pre>
 
 #### Rituais
 
@@ -118,3 +118,11 @@ Durante todo o processo estaremos realizando procedimentos de melhorias e corre�
 #### Comunicação
 #### Ferramentas de Planejamento
 #### Métricas de gerenciamento
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'dark'
+	});
+</script>
