@@ -69,6 +69,11 @@ Cabe ao gerente do projeto unificar essas “sub-equipes”, tendo uma visão ma
 
 #### Papéis
 
+![Papel do gerente de projetos](/assets/img/planometodologico/gerente-de-projetos.jpg)
+![Papel do project owner](/assets/img/planometodologico/po.jpg)
+![Papel do time de arquitetura](/assets/img/planometodologico/time-de-arquitetura.jpg)
+![Papel do time de desenvolvimento](/assets/img/planometodologico/time-de-desenvolvimento.jpg)
+![Papel do time de experiencia de usuário](/assets/img/planometodologico/time-de-ux-ui.jpg)
 
 #### Rituais
 
