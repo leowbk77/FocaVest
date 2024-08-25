@@ -40,7 +40,7 @@ Na segunda fase, adotaremos uma abordagem ágil para o desenvolvimento, com o ob
 
 Este documento detalha o plano de desenvolvimento do aplicativo FocaVest, uma plataforma digital completa para auxiliar estudantes na preparação para o vestibular. O projeto será realizado por uma equipe de quatro(4) integrantes e terá duração de 8 semanas, com entrega final prevista para 11 de novembro de 2024.
 
-Todos os artefatos do projeto serão documentados e disponibilizados no [](https://leowbk77.github.io/FocaVest/). O cronograma prevê entregas intermediárias nos seguintes períodos:
+Todos os artefatos do projeto serão documentados e disponibilizados no [https://leowbk77.github.io/FocaVest/](https://leowbk77.github.io/FocaVest/). O cronograma prevê entregas intermediárias nos seguintes períodos:
 
 16/09 e 14/10: Entregas 1 e 2 do repositório online (estima-se a entrega de 6 Requisitos Funcionais). 
 
