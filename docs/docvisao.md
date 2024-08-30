@@ -300,5 +300,5 @@ Estudantes de nível de ensino médio que almejam ingressar na universidade atra
 
  - **Recursos Móveis**: Aplicativos móveis, se desenvolvidos, devem seguir diretrizes das lojas de aplicativos.
 
- ### Referência 🧾
- [https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/lifecycle-management/6.0.3?topic=requirements-vision-document](https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/lifecycle-management/6.0.3?topic=requirements-vision-document)
+ ### Referência
+ [🧾 https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/lifecycle-management/6.0.3?topic=requirements-vision-document](https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/lifecycle-management/6.0.3?topic=requirements-vision-document)
