@@ -15,12 +15,15 @@
 
 ### Informações do Documento de Requisitos
 
-|Título do documento|Documento de Requisitos do FocaVest|
-|Autores|Leonardo Marques Ferreira (lmf), Rafael Alves Cardoso (rac), Lucas de Oliveira Ketelhut (lok), João Victor B.C. Teixeira (jvt)|
-|Comentários||
-|Nome do arquivo|TemplateRequisitos.doc|
-|HISTÓRICO DE REVISÕES|
+|**Título do documento**|Documento de Requisitos do FocaVest|
+|**Autores**|Leonardo Marques Ferreira (lmf), Rafael Alves Cardoso (rac), Lucas de Oliveira Ketelhut (lok), João Victor B.C. Teixeira (jvt)|
+|**Comentários**||
+|**Nome do arquivo**|TemplateRequisitos.doc|
+
+Histórico de Revisão
+
 |Revisões|Data|Descrição|Autor|
+|:---:|:---:|:---:|:---:|
 |01|02/09/24|Elaboração da primeira versão do documento|lmf, rac, lok, jvt|
 |02|05/09/24|Documento na web|lmf|
 
@@ -77,84 +80,102 @@ Esta seção apresenta em detalhes os requisitos funcionais do sistema.
 #### Cadastro e Autenticação
 
 **[RF001] Cadastro de alunos, professores e administradores** 
-Requisito básico para permitir que os usuários entrem no sistema. 
+Requisito básico para permitir que os usuários entrem no sistema.
+
 Prioridade: **Essencial**
 
 **[RF002] Sistema de login e autenticação seguros**
-Vários usuários poderão se cadastrar. 
+Vários usuários poderão se cadastrar.
+
 Prioridade: **Essencial**
 
 **[RF003] Recuperação de senha e gestão de perfil**
-Recuperação de senha e gestão de perfil. 
+Recuperação de senha e gestão de perfil.
+
 Prioridade: **Essencial**
 
 #### Agenda e Organização de Estudos
 
 **[RF004] Criação e gerenciamento de agendas de estudo**
-Uma das principais funções do sistema. Permite que o usuário crie e gerencie o processo de preparação pré-vestibular 
+Uma das principais funções do sistema. Permite que o usuário crie e gerencie o processo de preparação pré-vestibular
+
 Prioridade: **Essencial**
 
 **[RF005] Adicionar, editar e remover tarefas e eventos**
 Permite que o usuário tenha controle personalizado sobre a funcionalidade de agenda 
+
 Prioridade: **Essencial**
 
 **[RF006] Notificações e lembretes para prazos e eventos importantes**
 Funcionalidade que mantém o usuário por dentro dos prazos e eventos definidos nos planos de estudo. 
+
 Prioridade: **Essencial**
 
 #### Conteúdos e Materiais de Estudo
  
 
 **[RF007] Biblioteca de materiais de estudo** 
-Funcionalidade que permite que os usuários tenham acesso facilitado a materiais relevantes para o processo de preparação.  
+Funcionalidade que permite que os usuários tenham acesso facilitado a materiais relevantes para o processo de preparação. 
+
 Prioridade: **Essencial**
 
 **[RF008] Categorias e tags para busca e organização dos conteúdos** 
 Funcionalidades que facilitam a busca por materiais relevantes.  
+
 Prioridade: **Essencial**
  
 **[RF009] Possibilidade de upload e compartilhamento de materiais e agendas** 
 Funcionalidades de compartilhamento de conteúdo entre diferentes usuários.  
+
 Prioridade: **Essencial**
 
 #### Funcionalidades sobre Vestibulares
 
 **[RF010] Calendário com datas de vestibulares** 
 Funcionalidade básica que permitirá o acesso de informações sobre os diferentes vestibulares. 
+
 Prioridade: **Essencial**
 
 **[RF011] Informações detalhadas sobre cada vestibular** 
 Funcionalidade que permitirá o acesso de informações detalhadas sobre os diferentes vestibulares. 
+
 Prioridade: **Essencial**
 
 **[RF012] Alertas e atualizações sobre mudanças nos vestibulares** 
 Funcionalidade básica permitirá que os usuários fiquem por dentro de atualizações sobre os diferentes vestibulares.
+
 Prioridade: **Essencial**
 
 #### Avaliações e Exercícios
 **[RF013] Banco de questões e simulados de provas anteriores** 
 Funcionalidade que permitirá ao usuário ter acesso a conteúdos de  vestibulares anteriores. 
+
 Prioridade: **Essencial**
 
 **[RF014] Criação e gerenciamento de exercícios personalizados** 
-Funcionalidade que permitirá o acesso e gerenciamento personalizado de exercícios. 
+Funcionalidade que permitirá o acesso e gerenciamento personalizado de exercícios.
+
 Prioridade: **Essencial**
 
 **[RF015] Feedback e análise de exercícios** 
-Funcionalidade que permite ao usuário rastrear seu desempenho no período de preparação. 
+Funcionalidade que permite ao usuário rastrear seu desempenho no período de preparação.
+
 Prioridade: **Essencial**
 
 #### Interação e Suporte
 **[RF016] Fórum/Espaço de discussão entre alunos e professores** 
 Funcionalidade que permite a conexão entre diferentes usuários. 
+
 Prioridade: **Essencial**
 
 **[RF017] Sistema de mensagens para comunicação direta** 
-Funcionalidade que permite a conexão entre diferentes usuários e/ou suporte da plataforma de forma mais privada. 
+Funcionalidade que permite a conexão entre diferentes usuários e/ou suporte da plataforma de forma mais privada.
+
 Prioridade: **Essencial**
 
 **[RF018] Suporte e FAQ** 
-Ferramentas de suporte ao usuário com algum tipo de problema na plataforma. 
+Ferramentas de suporte ao usuário com algum tipo de problema na plataforma.
+
 Prioridade: **Essencial**
 
 ### Requisitos Não-Funcionais
