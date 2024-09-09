@@ -1,0 +1,54 @@
+/* cores */
+:root {
+    --teste: #fff;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+footer p {
+    padding-left: 1rem;
+}
+
+footer p a {
+    color: white;
+}
+
+/* MOBILE SMALL */
+@media only screen and (min-width: 20rem) {
+    
+}
+
+/* MOBILE MED */
+@media only screen and (min-width: 30rem) {
+
+}
+
+/* 1024 + */
+@media only screen and (min-width: 64rem) {
+
+}
