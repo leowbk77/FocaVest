@@ -4,6 +4,14 @@
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* melhor deixar pra lá k
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    */
     margin: 0 auto;
 }
 
@@ -20,6 +28,13 @@ header h1 {
     text-align: center;
 }
 
+/* MAIN */
+main {
+    background-color: var(--teste);
+    display: flex;
+    flex-direction: column;
+}
+
 /* FOOTER */
 footer {
     left: 0;
@@ -27,6 +42,7 @@ footer {
     color: white;
     background-color: black;
     width: 100%;
+    margin-top: auto;
 }
 
 footer p {
@@ -38,32 +54,57 @@ footer p a {
 }
 
 /* CARDS */
+/* cards de inspiração:
+    https://codepen.io/nailaahmad/pen/LGRxWJ
+    https://codepen.io/mikemang/pen/GRrBRZM
+*/
+.card {
+    margin: 1rem;
+    background-color: lightblue;
+
+    &:hover {
+        background-color: turquoise;
+        cursor: pointer;
+
+        & h1 {
+            color: white;
+        }
+    }
+
+    & h1 {
+        color: lightslategray;
+        margin: 0;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 30rem) {
+        width: 15rem;
+    }
+}
+
 .content-card {
     margin: 1rem;
     border-color: black;
     border-style: solid;
     border-width: thin;
-}
 
-.content-card h1 {
-    margin: 0;
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    border-bottom: thin solid black;
+    & h1 {
+        margin: 0;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        border-bottom: thin solid black;
+    }
 }
 
 /* MOBILE SMALL 320p*/
 @media only screen and (min-width: 20rem) {
-    
 }
-
 /* MOBILE MED 480p*/
 @media only screen and (min-width: 30rem) {
-
 }
-
 /* 1024p + */
 @media only screen and (min-width: 64rem) {
-
 }

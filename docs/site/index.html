@@ -12,24 +12,36 @@
         <h1>FocaVest</h1>
     </header>
     <main>
-        <section >
+        <section class="cards">
+
+            <div class="card is-collapsed">
+                <div class="card-inner js-expander">
+                    <h1>Documento de Visão</h1>
+                </div>
+                <div class="expander">
+                    <section class="content not-loaded" id="content-section-doc-visao"></section>
+                </div>
+            </div>
+
+            <div class="card is-collapsed">
+                <div class="card-inner js-expander">
+                    <h1>CARD</h1>
+                </div>
+                <div class="expander">
+                    <section class="content not-loaded"></section>
+                </div>
+            </div>
+
+            <!-- TEMPORARIO -->
             <article class="content-card" id="doc-visao-card">
                 <h1>Documento de visão</h1>
                 <div>
                     <button id="btn-doc-visao">EXPAND</button>
-                    <section id="content-section-doc-visao">
-                    </section>
+                    <section></section>
                 </div>
             </article>
+            <!-- TEMPORARIO -->
 
-            <article class="content-card" id="doc-businesscase-card">
-                <h1>Business Case</h1>
-                <div>
-                    <button type="button" id="btn-doc-businesscase">EXPAND</button>
-                    <section>
-                    </section>
-                </div>
-            </article>
         </section>
     </main>
     <footer>
@@ -37,5 +49,6 @@
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
     </footer>
     <script src="./assets/scripts/loadcontent.js"></script>
+    <script src="./assets/scripts/cardstoggle.js"></script>
 </body>
 </html>
