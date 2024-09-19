@@ -43,6 +43,3 @@ cards.forEach(function (card) {
         });
     }
 });
-
-// temp
-//console.log(cards)

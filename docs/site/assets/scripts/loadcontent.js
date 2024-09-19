@@ -1,21 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const botao = document.getElementById("btn-doc-visao");
-    const contentSection = document.getElementById("content-section-doc-visao");
-    const contentCard = document.getElementById("doc-visao-card")
+    const cards = document.querySelectorAll('.card');
+    const contentLoaded = 'content-loaded';
 
-    botao.addEventListener("click", function (){
-        fetch('./content/docvisao.html').then(function (response) {
-            if (response.ok) {
-                return response.text();
-            }
-            contentSection.appendChild(document.createElement("p").innerText("ERRO"))
-            throw response;
-        }).then(function (text) {
-            contentCard.style.margin = 0;
-            contentSection.innerHTML = text;
-        })
+    cards.forEach(function (card) {
+        let expander = card.querySelector('.js-expander');
+        let contentSection = card.querySelector('.content-section');
+        if (expander) {
+            expander.addEventListener('click', function () {
+                if (!card.classList.contains(contentLoaded)) {
+                    fetch('./content/'+ contentSection.id +'.html').then(function (response) {
+                        if (response.ok){
+                            return response.text();
+                        }
+                        //
+                        // DEFINIR TRATAMENTO DE ERRO AQUI - ou try catch?
+                        console.log('erro.')
+                        //
+                        throw response;
+                    }).then(function (text) {
+                        contentSection.innerHTML = text;
+                    });
+                }
+            });
+        }
     });
-})
-
-
+});
 // https://gomakethings.com/how-to-load-html-from-another-page-with-vanilla-javascript/
