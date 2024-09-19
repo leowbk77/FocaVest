@@ -1,6 +1,7 @@
 /* cores */
 :root {
     --teste: #fff;
+    --slate: #0d0e1f;
 }
 
 body {
@@ -58,20 +59,31 @@ footer p a {
     https://codepen.io/nailaahmad/pen/LGRxWJ
     https://codepen.io/mikemang/pen/GRrBRZM
 */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card {
     margin: 1rem;
     background-color: lightblue;
+    width: 80vw;
+
+    @media only screen and (min-width: 30rem) {
+        width: 15rem;
+    }
 
     &:hover {
         background-color: turquoise;
-        cursor: pointer;
+        transform: scale(1.05);
 
-        & h1 {
+        h1 {
             color: white;
         }
     }
 
-    & h1 {
+    h1 {
         color: lightslategray;
         margin: 0;
         padding-top: .5rem;
@@ -79,24 +91,40 @@ footer p a {
         text-align: center;
     }
 
-    @media only screen and (min-width: 30rem) {
-        width: 15rem;
-    }
-}
-
-.content-card {
-    margin: 1rem;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
-
-    & h1 {
-        margin: 0;
-        padding-top: .5rem;
-        padding-bottom: 1rem;
+    .card-inner {
+        cursor: pointer;
         text-align: center;
-        border-bottom: thin solid black;
+        text-transform: uppercase;
     }
+
+    .card-expander {
+        background-color: var(--slate);
+        display: flex;
+        flex-direction: column;
+        
+        .collapser-btn {
+            max-width: 2rem;
+            max-height: 2rem;
+            border: none;
+            color: darkgray;
+
+            &:hover {
+                color: white;
+                background-color: red;
+            }
+        }
+    }
+
+    &.is-collapsed {
+        .card-expander {
+            display: none;
+        }
+    }
+
+    &.is-expanded {
+
+    }
+
 }
 
 /* MOBILE SMALL 320p*/

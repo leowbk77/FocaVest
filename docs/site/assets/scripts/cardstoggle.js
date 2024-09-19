@@ -27,7 +27,7 @@ function toggle(card) {
     }
 }
 
-// aciona o toggle em cada card
+// aciona o toggle em cada card e botoes de fechar
 cards.forEach(function (card) {
     let expander = card.querySelector('.js-expander');
     if (expander) {
@@ -35,7 +35,14 @@ cards.forEach(function (card) {
             toggle(card);
         });
     }
+
+    let cardExpanderCloseBtn = card.querySelector('.js-collapser');
+    if (cardExpanderCloseBtn) {
+        cardExpanderCloseBtn.addEventListener('click', function () {
+            toggle(card);
+        });
+    }
 });
 
 // temp
-console.log(cards)
+//console.log(cards)
