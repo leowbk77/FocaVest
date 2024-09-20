@@ -2,6 +2,9 @@
 :root {
     --teste: #fff;
     --slate: #0e0f25;
+    --card-color-frst: #add8e6;
+    --card-color-scnd: #f2f2f2;
+    --table-background: #373737;
 }
 
 body {
@@ -81,7 +84,7 @@ footer p a {
 .card-inner {
     border-radius: .2rem;
     width: 80vw;
-    background: linear-gradient(#add8e6, #d1dee3);
+    background: linear-gradient(var(--card-color-frst), var(--card-color-scnd));
     margin: auto;
 
     @media only screen and (min-width: 30rem) {
@@ -112,7 +115,7 @@ footer p a {
 .card-expander {
     margin-top: .5rem;
     max-width: 100vw;
-    background-color: var(--slate);
+    background-color: var(--card-color-scnd);
         
     .collapser-btn {
         cursor: pointer;
@@ -137,7 +140,58 @@ footer p a {
 
 /* CONTENT */
 .content-section {
-    color: #fff;
+    color: black;
+    padding: .1rem .2rem;
+
+    @media only screen and (min-width: 30rem) {
+        padding: .1rem 10rem;
+    }
+
+    /* tabela de base:
+    https://codepen.io/florantara/pen/dROvdb?editors=1100
+    */
+    table {
+        margin: auto;
+        border: .1rem solid var(--table-background);
+        border-collapse: collapse;
+    }
+
+    table td, table th {
+        text-align: center;
+        padding: .5rem;
+    }
+
+    table thead th {
+        color: white;
+        background-color: var(--table-background);
+    }
+
+    table tr:nth-child(even) {
+        background: white;
+    }
+}
+
+/* LOAD */
+
+.loading {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid white;
+    border-top: 6px solid var(--card-color-frst);
+    border-radius: 100%;
+    margin: auto;
+    display: none;
+    animation: spin 1s infinite linear;
+    &.display {
+        display: block;
+    }
+
+} @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
 }
 
 /* MOBILE SMALL 320p*/
