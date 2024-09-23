@@ -83,7 +83,8 @@ footer p a {
 
 .card-inner {
     border-radius: .2rem;
-    width: 80vw;
+    width: 60vw;
+    min-height: 7vh;
     background: linear-gradient(var(--card-color-frst), var(--card-color-scnd));
     margin: auto;
 
@@ -168,6 +169,75 @@ footer p a {
 
     table tr:nth-child(even) {
         background: white;
+    }
+
+    /* RESPONSIVA
+
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    table thead, table tbody, table, th {
+        display: block;
+    }
+
+    table thead th:last-child {
+        border-bottom: none;
+    }
+    
+    table thead {
+        float: left;
+    }
+
+    table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    table td, table th {
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-overflow: ellipsis;
+    }
+
+    table thead th {
+        text-align: left;
+    }
+
+    table tbody tr {
+        display: table-cell;
+    }
+
+    table tbody td {
+        display: block;
+        text-align: center;
+    }*/
+}
+
+/* Plano metodologico assets n colors*/
+#planometodologico {
+    img {
+        max-width: 100%;
+    }
+
+    .red-bkgd {
+        background: linear-gradient(red, white);
+    }
+
+    .yellow-bkgd {
+        background: linear-gradient(yellow, white);
+    }
+
+    .green-bkgd {
+        background: linear-gradient(green, white);
+    }
+
+    .orange-bkgd {
+        background: linear-gradient(orangered, white);
     }
 }
 

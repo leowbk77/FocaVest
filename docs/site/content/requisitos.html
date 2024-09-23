@@ -1,0 +1,215 @@
+<h2 id="-_este-documento-ainda-est-em-produ-o_-">🛠 <em>Este documento ainda está em produção</em></h2>
+<hr>
+<h3 id="sum-rio">Sumário</h3>
+<ol>
+    <li><a href="#introdu-o">Introdução</a></li>
+    <li><a href="#descri-o-geral-do-sistema">Descrição Geral do Sistema</a></li>
+    <li><a href="#requisitos-funcionais">Requisitos Funcionais</a></li>
+    <li><a href="#requisitos-n-o-funcionais">Requisitos Não-Funcionais</a></li>
+    <li><a href="#requisitos-de-interface">Requisitos de Interface</a></li>
+    <li><a href="#gloss-rio">Glossário</a></li>
+</ol>
+<h3 id="informa-es-do-documento-de-requisitos">Informações do Documento de Requisitos</h3>
+<p>|<strong>Título do documento</strong>|Documento de Requisitos do FocaVest|
+    |<strong>Autores</strong>|Leonardo Marques Ferreira (lmf), Rafael Alves Cardoso (rac), Lucas de Oliveira Ketelhut
+    (lok), João Victor B.C. Teixeira (jvt)|
+    |<strong>Comentários</strong>||
+    |<strong>Nome do arquivo</strong>|TemplateRequisitos.doc|</p>
+<p>Histórico de Revisão</p>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Revisões</th>
+            <th style="text-align:center">Data</th>
+            <th style="text-align:center">Descrição</th>
+            <th style="text-align:center">Autor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">01</td>
+            <td style="text-align:center">02/09/24</td>
+            <td style="text-align:center">Elaboração da primeira versão do documento</td>
+            <td style="text-align:center">lmf, rac, lok, jvt</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">02</td>
+            <td style="text-align:center">05/09/24</td>
+            <td style="text-align:center">Documento na web</td>
+            <td style="text-align:center">lmf</td>
+        </tr>
+    </tbody>
+</table>
+<h3 id="introdu-o">Introdução</h3>
+<p>Este documento tem como objetivo apresentar uma descrição dos requisitos do FocaVest. Por meio deste, o cliente
+    tomará conhecimento das funcionalidades do projeto e os desenvolvedores terão uma noção de como implementar suas
+    funcionalidades.</p>
+<h4 id="objetivos">Objetivos</h4>
+<p>O objetivo é apresentar de forma clara e coesa os requisitos funcionais e os não funcionais do FocaVest. O que
+    permitirá que os desenvolvedores compreendam o que é a plataforma e como ela deve ser implementada, além de servir
+    aos clientes como uma fonte de informação </p>
+<h4 id="escopo">Escopo</h4>
+<p>O documento descreve de forma abrangente os requisitos funcionais e não funcionais do FocaVest, facilitando a
+    compreensão por parte da equipe de projeto e clientes envolvidos.</p>
+<h4 id="vis-o-geral-do-documento">Visão Geral do Documento</h4>
+<p>A seguir são apresentadas as divisões deste documento e uma rápida descrição de cada seção:</p>
+<ul>
+    <li>Seção 2 – Descrição Geral do Sistema: descreve o escopo do sistema e seus usuários de maneira geral. </li>
+    <li>Seção 3 – Requisitos Funcionais: especifica todos os requisitos funcionais planejados para o sistema.</li>
+    <li>Seção 4 – Requisitos Não-Funcionais: especifica todos os requisitos não-funcionais da primeira iteração do
+        sistema</li>
+    <li>Seção 5 – Requisitos de Interface. </li>
+</ul>
+<h4 id="padr-es-e-conven-es">Padrões e Convenções</h4>
+<h5 id="identifica-o-dos-requisitos">Identificação dos Requisitos</h5>
+<p>Para a especificação dos requisitos utilizaremos a seguinte representação: </p>
+<p>[TIPODOREQUISITONúmero] Nome </p>
+<p>O campo TIPODOREQUISITO poderá ser especificado pelos códigos RF (Requisitos Funcionais) ou RNF (Requisitos
+    Não-Funcionais). Já o campo Número será preenchido com um número correspondente à ordem em que os requisitos
+    aparecem no documento. </p>
+<h5 id="prioridade-dos-requisitos">Prioridade dos Requisitos</h5>
+<p>A cada requisito será atribuída uma prioridade. A descrição de cada uma segue abaixo:</p>
+<ul>
+    <li>Essencial é um requisito imprescindível. Sem ele, o sistema não funcionará. </li>
+    <li>Importante é um requisito que deve ser implementado, mas, se não for, o sistema funcionará do mesmo jeito, mas
+        de maneira insatisfatória. </li>
+    <li>Desejável é um requisito que trará um diferencial adicional ao sistema. Por isso, pode ser deixado para ser
+        implementado por último ou em próximas iterações. </li>
+</ul>
+<h3 id="descri-o-geral-do-sistema">Descrição Geral do Sistema</h3>
+<p>Para os pré-vestibulandos que enfrentam dificuldades em acessar informações centralizadas e confiáveis sobre
+    vestibulares e cursos, a <strong>FocaVest</strong> é uma plataforma digital que centraliza dados essenciais, fornece
+    ferramentas de gestão de estudos e oferece suporte personalizado através de uma comunidade de estudantes e
+    ex-alunos. De outro modo, as opções atuais de informações fragmentadas e a falta de suporte comunitário, a FocaVest
+    integra tudo em um único lugar, facilitando a organização e a preparação eficaz dos usuários. </p>
+<h4 id="escopo-negativo">Escopo Negativo</h4>
+<p>Devido à amplitude do projeto FocaVest, é necessário delimitar claramente quais funcionalidades não serão abordadas
+    nas versões iniciais do projeto. Algumas funcionalidades fundamentais demandarão maior atenção e refinamento para a
+    entrega de uma melhor experiencia de uso da plataforma, por isso algumas funcionalidades citadas em documentos
+    anteriores não terão comprometimento de implementação nas primeiras versões da plataforma, como funcionalidades de
+    Inteligência artificial e suporte multilíngue. </p>
+<p>O projeto se compromete a desenvolver as funcionalidades citadas neste documento, pois são vistas pela equipe de
+    desenvolvimento como prioridade para o funcionamento base da plataforma e permitirão que o valor principal do
+    FocaVest seja entregue aos seus usuários e serão base para a expansão futura da plataforma.</p>
+<h3 id="requisitos-funcionais">Requisitos Funcionais</h3>
+<p>Esta seção apresenta em detalhes os requisitos funcionais do sistema.</p>
+<h4 id="cadastro-e-autentica-o">Cadastro e Autenticação</h4>
+<p><strong>[RF001] Cadastro de alunos, professores e administradores</strong>
+    Requisito básico para permitir que os usuários entrem no sistema.</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF002] Sistema de login e autenticação seguros</strong>
+    Vários usuários poderão se cadastrar.</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF003] Recuperação de senha e gestão de perfil</strong>
+    Recuperação de senha e gestão de perfil.</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<h4 id="agenda-e-organiza-o-de-estudos">Agenda e Organização de Estudos</h4>
+<p><strong>[RF004] Criação e gerenciamento de agendas de estudo</strong>
+    Uma das principais funções do sistema. Permite que o usuário crie e gerencie o processo de preparação pré-vestibular
+</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF005] Adicionar, editar e remover tarefas e eventos</strong>
+    Permite que o usuário tenha controle personalizado sobre a funcionalidade de agenda </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF006] Notificações e lembretes para prazos e eventos importantes</strong>
+    Funcionalidade que mantém o usuário por dentro dos prazos e eventos definidos nos planos de estudo. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<h4 id="conte-dos-e-materiais-de-estudo">Conteúdos e Materiais de Estudo</h4>
+<p><strong>[RF007] Biblioteca de materiais de estudo</strong>
+    Funcionalidade que permite que os usuários tenham acesso facilitado a materiais relevantes para o processo de
+    preparação. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF008] Categorias e tags para busca e organização dos conteúdos</strong>
+    Funcionalidades que facilitam a busca por materiais relevantes. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF009] Possibilidade de upload e compartilhamento de materiais e agendas</strong>
+    Funcionalidades de compartilhamento de conteúdo entre diferentes usuários. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<h4 id="funcionalidades-sobre-vestibulares">Funcionalidades sobre Vestibulares</h4>
+<p><strong>[RF010] Calendário com datas de vestibulares</strong>
+    Funcionalidade básica que permitirá o acesso de informações sobre os diferentes vestibulares. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF011] Informações detalhadas sobre cada vestibular</strong>
+    Funcionalidade que permitirá o acesso de informações detalhadas sobre os diferentes vestibulares. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF012] Alertas e atualizações sobre mudanças nos vestibulares</strong>
+    Funcionalidade básica permitirá que os usuários fiquem por dentro de atualizações sobre os diferentes vestibulares.
+</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<h4 id="avalia-es-e-exerc-cios">Avaliações e Exercícios</h4>
+<p><strong>[RF013] Banco de questões e simulados de provas anteriores</strong>
+    Funcionalidade que permitirá ao usuário ter acesso a conteúdos de vestibulares anteriores. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF014] Criação e gerenciamento de exercícios personalizados</strong>
+    Funcionalidade que permitirá o acesso e gerenciamento personalizado de exercícios.</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF015] Feedback e análise de exercícios</strong>
+    Funcionalidade que permite ao usuário rastrear seu desempenho no período de preparação.</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<h4 id="intera-o-e-suporte">Interação e Suporte</h4>
+<p><strong>[RF016] Fórum/Espaço de discussão entre alunos e professores</strong>
+    Funcionalidade que permite a conexão entre diferentes usuários. </p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF017] Sistema de mensagens para comunicação direta</strong>
+    Funcionalidade que permite a conexão entre diferentes usuários e/ou suporte da plataforma de forma mais privada.</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<p><strong>[RF018] Suporte e FAQ</strong>
+    Ferramentas de suporte ao usuário com algum tipo de problema na plataforma.</p>
+<p>Prioridade: <strong>Essencial</strong></p>
+<h3 id="requisitos-n-o-funcionais">Requisitos Não-Funcionais</h3>
+<h4 id="seguran-a">Segurança</h4>
+<h4 id="usabilidade">Usabilidade</h4>
+<h4 id="confiabilidade">Confiabilidade</h4>
+<h4 id="desempenho">Desempenho</h4>
+<h4 id="manuten-o-e-atualiaza-o">Manutenção e Atualiazação</h4>
+<h4 id="escalabilidade">Escalabilidade</h4>
+<h3 id="requisitos-de-interface">Requisitos de Interface</h3>
+<p>Esta seção apresenta em detalhes os requisitos de interface do sistema. Especificam como um sistema de software
+    interage com outros sistemas, usuários e hardware. Esses requisitos são fundamentais para garantir que o software
+    possa se comunicar de maneira eficaz e eficiente com outras partes do ambiente de tecnologia ou com os usuários
+    finais.</p>
+<p><strong>Interface Responsiva</strong> </p>
+<p>O sistema deve ser acessível em dispositivos móveis, tablets e desktops, ajustando automaticamente a interface para
+    cada tipo de tela. </p>
+<p><strong>Dashboard</strong> </p>
+<p>O usuário deve visualizar um painel inicial com o resumo de suas metas diárias, progresso dos estudos e notificações
+    importantes. </p>
+<p><strong>Navegação Intuitiva</strong> </p>
+<p>A navegação deve ser simples e intuitiva, com menus e botões claramente identificados para facilitar o acesso às
+    funcionalidades principais. </p>
+<p><strong>Sistema de notificação</strong> </p>
+<p>A interface deve exibir notificações sobre prazos de metas, novas tarefas ou conteúdos a serem revisados. </p>
+<p><strong>Interface de calendário interativo</strong> </p>
+<p>A interface deve ter um calendário interativo, onde o usuário pode organizar seus horários de estudo e registrar suas
+    atividades. </p>
+<p><strong>Feedback imediato</strong> </p>
+<p>O sistema deve fornecer feedback visual imediato ao usuário ao completar tarefas, como animações ou mensagens de
+    confirmação. </p>
+<p><strong>Personalização de temas</strong> </p>
+<p>O usuário deve poder personalizar a interface, escolhendo diferentes temas de cores ou layouts de acordo com sua
+    preferência. </p>
+<p><strong>Acessibilidade</strong> </p>
+<p>O design da interface deve seguir boas práticas de acessibilidade, como contrastes adequados e suporte para navegação
+    por teclado e leitores de tela. </p>
+<p><strong>Ajuda contextual</strong> </p>
+<p>A interface deve fornecer dicas e orientações contextuais de forma discreta para ajudar o usuário a entender as
+    funcionalidades, sem interromper o fluxo de uso. </p>
+<h3 id="gloss-rio">Glossário</h3>
+<ul>
+    <li><strong>FocaVest</strong>: Plataforma digital para preparação de vestibulares, fornecendo ferramentas de gestão
+        de estudos e suporte comunitário.</li>
+    <li><strong>Vestibulares</strong>: Exames de admissão para instituições de ensino superior. </li>
+    <li><strong>Agenda de Estudos</strong>: Ferramenta dentro da plataforma FocaVest que permite a criação e gestão de
+        planos de estudo personalizados.</li>
+    <li><strong>Simulados</strong>: Conjuntos de questões de vestibulares anteriores disponíveis na plataforma para
+        prática dos usuários. </li>
+    <li><strong>IA (Inteligência Artificial)</strong>: Tecnologia usada para personalizar recomendações e otimizar o
+        planejamento de estudos dentro da plataforma. </li>
+    <li><strong>CRM (Customer Relationship Management)</strong>: Sistema para gerenciar interações com os usuários e
+        fornecer suporte dentro da plataforma.</li>
+    <li><strong>Backup</strong>: Processo de cópia de segurança dos dados armazenados na plataforma.</li>
+    <li><strong>Escalonamento</strong>: Capacidade da plataforma de aumentar sua infraestrutura para suportar um número
+        maior de usuários.</li>
+    <li><strong>API (Application Programming Interface)</strong>: Interface para integração entre diferentes sistemas,
+        como universidades e plataformas educacionais.</li>
+</ul>
