@@ -82,7 +82,8 @@ footer p a {
 }
 
 .card-inner {
-    border-radius: .2rem;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
     width: 60vw;
     min-height: 7vh;
     background: linear-gradient(var(--card-color-frst), var(--card-color-scnd));
@@ -114,7 +115,6 @@ footer p a {
 }
 
 .card-expander {
-    margin-top: .5rem;
     max-width: 100vw;
     background-color: var(--card-color-scnd);
         
@@ -137,6 +137,10 @@ footer p a {
 .collapser-btn-right {
     display: flex;
     justify-content: flex-end;
+      
+    @media only screen and (min-width: 64rem) {
+        margin-right: 20rem;
+    }
 }
 
 /* CONTENT */
@@ -146,6 +150,10 @@ footer p a {
 
     @media only screen and (min-width: 30rem) {
         padding: .1rem 10rem;
+    }
+        
+    @media only screen and (min-width: 64rem) {
+        padding: .1rem 20rem;
     }
 
     /* tabela de base:
