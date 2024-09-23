@@ -1,0 +1,275 @@
+/* cores */
+:root {
+    --teste: #fff;
+    --slate: #0e0f25;
+    --card-color-frst: #add8e6;
+    --card-color-scnd: #f2f2f2;
+    --table-background: #373737;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* MAIN */
+main {
+    background-color: var(--teste);
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER */
+footer {
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    padding-left: 1rem;
+}
+
+footer p a {
+    color: white;
+}
+
+/* CARDS */
+/* cards de inspiração:
+    https://codepen.io/nailaahmad/pen/LGRxWJ
+    https://codepen.io/mikemang/pen/GRrBRZM
+*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+
+    &.is-collapsed {
+        .card-expander {
+            display: none;
+        }
+    }
+
+    &.is-inactive {
+        .card-inner {
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+}
+
+.card-inner {
+    border-radius: .2rem;
+    width: 60vw;
+    min-height: 7vh;
+    background: linear-gradient(var(--card-color-frst), var(--card-color-scnd));
+    margin: auto;
+
+    @media only screen and (min-width: 30rem) {
+        width: 15rem;
+    }
+
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+    h1 {
+        color: lightslategray;
+        margin: 0;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+
+    &:hover {
+        background: turquoise;
+        transform: scale(1.05);
+        h1 {
+            color: white;
+        }
+    }
+}
+
+.card-expander {
+    margin-top: .5rem;
+    max-width: 100vw;
+    background-color: var(--card-color-scnd);
+        
+    .collapser-btn {
+        cursor: pointer;
+        margin: .5rem .5rem .5rem 0;
+        max-width: 2rem;
+        max-height: 2rem;
+        border: none;
+        border-radius: .2rem;
+        color: darkgray;
+
+        &:hover {
+            color: white;
+            background-color: red;
+        }
+    }
+}
+
+.collapser-btn-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* CONTENT */
+.content-section {
+    color: black;
+    padding: .1rem .2rem;
+
+    @media only screen and (min-width: 30rem) {
+        padding: .1rem 10rem;
+    }
+
+    /* tabela de base:
+    https://codepen.io/florantara/pen/dROvdb?editors=1100
+    */
+    table {
+        margin: auto;
+        border: .1rem solid var(--table-background);
+        border-collapse: collapse;
+    }
+
+    table td, table th {
+        text-align: center;
+        padding: .5rem;
+    }
+
+    table thead th {
+        color: white;
+        background-color: var(--table-background);
+    }
+
+    table tr:nth-child(even) {
+        background: white;
+    }
+
+    /* RESPONSIVA
+
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    table thead, table tbody, table, th {
+        display: block;
+    }
+
+    table thead th:last-child {
+        border-bottom: none;
+    }
+    
+    table thead {
+        float: left;
+    }
+
+    table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    table td, table th {
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-overflow: ellipsis;
+    }
+
+    table thead th {
+        text-align: left;
+    }
+
+    table tbody tr {
+        display: table-cell;
+    }
+
+    table tbody td {
+        display: block;
+        text-align: center;
+    }*/
+}
+
+/* Plano metodologico assets n colors*/
+#planometodologico {
+    img {
+        max-width: 100%;
+    }
+
+    .red-bkgd {
+        background: linear-gradient(red, white);
+    }
+
+    .yellow-bkgd {
+        background: linear-gradient(yellow, white);
+    }
+
+    .green-bkgd {
+        background: linear-gradient(green, white);
+    }
+
+    .orange-bkgd {
+        background: linear-gradient(orangered, white);
+    }
+}
+
+/* LOAD */
+
+.loading {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid white;
+    border-top: 6px solid var(--card-color-frst);
+    border-radius: 100%;
+    margin: auto;
+    display: none;
+    animation: spin 1s infinite linear;
+    &.display {
+        display: block;
+    }
+
+} @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+/* MOBILE SMALL 320p*/
+@media only screen and (min-width: 20rem) {
+}
+/* MOBILE MED 480p*/
+@media only screen and (min-width: 30rem) {
+}
+/* 1024p + */
+@media only screen and (min-width: 64rem) {
+}

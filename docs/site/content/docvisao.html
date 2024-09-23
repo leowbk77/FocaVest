@@ -1,0 +1,618 @@
+<h3 id="sum-rio">Sumário</h3>
+<ol>
+    <li><a href="#introdu-o">Introdução</a></li>
+    <li><a href="#posicionamento">Posicionamento</a></li>
+    <li><a href="#descri-es-da-parte-interessada-e-dos-usu-rios">Descrições</a></li>
+    <li><a href="#vis-o-geral-do-produto">Visão Geral do Produto</a></li>
+    <li><a href="#recursos-do-produto">Recursos do Produto</a></li>
+    <li><a href="#restri-es">Restrições</a></li>
+</ol>
+<p>Histórico de Revisão</p>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Data</th>
+            <th style="text-align:center">Versão</th>
+            <th style="text-align:center">Descrição</th>
+            <th style="text-align:center">Autores</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">14/08/2024</td>
+            <td style="text-align:center">V1.0.0</td>
+            <td style="text-align:center">Criação do documento</td>
+            <td style="text-align:center">LMF, JVBC, RAC, LOK</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">22/08/2024</td>
+            <td style="text-align:center">V1.0.1</td>
+            <td style="text-align:center">Atualização do documento</td>
+            <td style="text-align:center"></td>
+        </tr>
+        <tr>
+            <td style="text-align:center">23/08/2024</td>
+            <td style="text-align:center">V1.0.2</td>
+            <td style="text-align:center">Atualização do documento</td>
+        </tr>
+    </tbody>
+</table>
+<h3 id="introdu-o">Introdução</h3>
+<h4 id="prop-sito">Propósito</h4>
+<p>Este documento determina o escopo de alto nível e propósito do projeto, permitindo a compreensão da ideia e
+    alinhamento de expectativas, reduzindo riscos e facilitando o processo de planejamento/análise e desenvolvimento.
+</p>
+<h4 id="escopo">Escopo</h4>
+<p>O projeto FocaVest tem a finalidade de desenvolver uma plataforma que auxilie estudantes vestibulandos no seu
+    processo de preparação, fornecendo recursos que facilitem a organização de rotinas de estudo, agenda personalizada,
+    facilidade de acesso a recursos de informação sobre vestibulares e compartilhamento de conteúdo com outros usuários
+    da plataforma.</p>
+<h4 id="defini-es-acr-nimos-e-abrevia-es">Definições, acrônimos e abreviações</h4>
+<p><strong>FocaVest</strong>: Nome da plataforma digital para preparação de vestibulares e gestão de estudos. </p>
+<p><strong>Plataforma Digital</strong>: Um sistema acessado online que oferece ferramentas e informações para usuários.
+</p>
+<p><strong>Vestibulares</strong>: Exames de admissão para instituições de ensino superior. </p>
+<p><strong>AI - Inteligência Artificial</strong>: Tecnologia usada para recomendações personalizadas e análise de dados.
+</p>
+<p><strong>CRM - Customer Relationship Management</strong>: Sistema para gerenciar interações com clientes e usuários.
+</p>
+<h4 id="vis-o-geral">Visão Geral</h4>
+<p>Este documento de visão está estruturado para fornecer uma compreensão clara e detalhada do projeto FocaVest. A
+    seguir, uma visão geral das seções principais: </p>
+<ul>
+    <li>
+        <p><strong>Introdução</strong>: Define o propósito, escopo e termos usados no documento, fornecendo o contexto
+            necessário para o projeto. </p>
+    </li>
+    <li>
+        <p><strong>Posicionamento</strong>: Explica a oportunidade de negócio e a proposição de valor do FocaVest em
+            relação às necessidades do mercado e dos usuários. </p>
+    </li>
+    <li>
+        <p><strong>Descrições das Partes Interessadas e Usuários</strong>: Identifica as partes envolvidas no projeto e
+            suas necessidades, bem como o perfil dos usuários e o ambiente de uso da plataforma. </p>
+    </li>
+    <li>
+        <p><strong>Visão Geral do Produto</strong>: Detalha as principais funcionalidades e interações da plataforma,
+            além de suas capacidades e requisitos de instalação e segurança. </p>
+    </li>
+    <li>
+        <p><strong>Recursos do Produto</strong>: Lista os recursos principais que a plataforma oferecerá para facilitar
+            a preparação dos estudantes para os vestibulares. </p>
+    </li>
+    <li>
+        <p><strong>Restrições</strong>: Apresenta os desafios e limitações do projeto, incluindo dependências
+            tecnológicas e regulamentações de proteção de dados. </p>
+    </li>
+</ul>
+<h3 id="posicionamento">Posicionamento</h3>
+<h4 id="oportunidade-de-neg-cio">Oportunidade de Negócio</h4>
+<p>O mercado de aplicativos para pré-vestibulandos é bastante competitivo, com diversas plataformas oferecendo recursos
+    como agendas, materiais de estudo e comunidades online. Embora essas soluções já auxiliem os estudantes na
+    organização e preparação para os vestibulares, muitas delas carecem de personalização e inteligência artificial para
+    oferecer um acompanhamento mais individualizado. Além disso, a falta de integração com outras ferramentas e a
+    ausência de mentoria especializada são pontos que podem ser explorados para se diferenciar. </p>
+<h4 id="descri-o-do-problema">Descrição do Problema</h4>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Descrição do problema</th>
+            <th style="text-align:center">O que afeta</th>
+            <th style="text-align:center">Impacto</th>
+            <th style="text-align:center">Solução viável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Organização de rotina pré-vestibular</td>
+            <td style="text-align:center">Preparação do estudante</td>
+            <td style="text-align:center">Aumento da dificuldade na preparação e diminuição da qualidade de estudo</td>
+            <td style="text-align:center">Uma agenda altamente personalizável, com fácil acesso e compartilhamento a
+                recursos de informação</td>
+        </tr>
+    </tbody>
+</table>
+<h4 id="instru-o-de-posi-o-do-produto">Instrução de Posição do Produto</h4>
+<p>Para os pré-vestibulandos que enfrentam dificuldades em acessar informações centralizadas e confiáveis sobre
+    vestibulares e cursos, a FocaVest é uma plataforma digital que centraliza dados essenciais, fornece ferramentas de
+    gestão de estudos e oferece suporte personalizado através de uma comunidade de estudantes e ex-alunos. De outro
+    modo, as opções atuais de informações fragmentadas e a falta de suporte comunitário, a FocaVest integra tudo em um
+    único lugar, facilitando a organização e a preparação eficaz dos usuários. </p>
+<h3 id="descri-es-da-parte-interessada-e-dos-usu-rios">Descrições da parte interessada e dos usuários</h3>
+<h4 id="demogr-ficos-de-mercado">Demográficos de Mercado</h4>
+<p><strong>Pré-Vestibulandos</strong> </p>
+<ul>
+    <li>
+        <p><strong>Idade</strong>: 16-19 anos. </p>
+    </li>
+    <li>
+        <p><strong>Necessidades</strong>: Informações centralizadas sobre vestibulares, ferramentas de gestão de
+            estudos, e suporte comunitário. </p>
+    </li>
+</ul>
+<p><strong>Universidades e Instituições de Ensino</strong> </p>
+<ul>
+    <li><strong>Necessidades</strong>: Canal para divulgar informações de vestibulares e cursos. </li>
+</ul>
+<p><strong>Ex-Alunos e Mentores</strong> </p>
+<ul>
+    <li>
+        <p><strong>Idade</strong>: 20-30 anos. </p>
+    </li>
+    <li>
+        <p><strong>Necessidades</strong>: Plataforma para compartilhar experiências e conselhos. </p>
+    </li>
+</ul>
+<p><strong>Educadores</strong> </p>
+<ul>
+    <li><strong>Necessidades</strong>: Ferramentas para apoiar e monitorar o progresso dos alunos. </li>
+</ul>
+<p><strong>Segmentos do Mercado</strong> </p>
+<ul>
+    <li>
+        <p><strong>Pré-Vestibulandos</strong>: Buscam centralização de informações e organização na preparação para
+            vestibulares. </p>
+    </li>
+    <li>
+        <p><strong>Universidades</strong>: Precisam de um canal para divulgação de vestibulares e cursos. </p>
+    </li>
+    <li>
+        <p><strong>Ex-Alunos/Mentores</strong>: Desejam compartilhar conselhos e experiências. </p>
+    </li>
+    <li>
+        <p><strong>Educadores</strong>: Procuram ferramentas para acompanhar a preparação dos alunos. </p>
+    </li>
+</ul>
+<p><strong>Tamanho e Crescimento do Mercado</strong> </p>
+<ul>
+    <li>
+        <p><strong>Usuários Potenciais</strong>: </p>
+        <ul>
+            <li>
+                <p><strong>Pré-Vestibulandos</strong>: 1,5 milhões no Brasil. </p>
+            </li>
+            <li>
+                <p><strong>Instituições de Ensino</strong>: Mais de 2.500. </p>
+            </li>
+            <li>
+                <p><strong>Ex-Alunos/Mentores</strong>: Cerca de 2 milhões. </p>
+            </li>
+            <li>
+                <p><strong>Educadores</strong>: Aproximadamente 500.000. </p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>Gastos</strong>: R$ 1.500 a R$ 3.000 por ano em preparatórios. </p>
+    </li>
+</ul>
+<p><strong>Tendências e Tecnologias</strong> </p>
+<ul>
+    <li>
+        <p><strong>Tendências</strong>: Digitalização da educação, personalização, e crescimento das comunidades online.
+        </p>
+    </li>
+    <li>
+        <p><strong>Tecnologias</strong>: Plataformas de gestão de estudos, comunidades virtuais, e inteligência
+            artificial. </p>
+    </li>
+</ul>
+<p><strong>Questões Estratégicas</strong> </p>
+<p><strong>Reputação Atual</strong>: Limitada, como nova entrada no mercado. </p>
+<p><strong>Reputação Desejada</strong>: Plataforma confiável e essencial para preparação de vestibulandos. </p>
+<p><strong>Suporte aos Objetivos</strong>: Melhora a organização e preparação dos usuários, contribuindo para a
+    construção de uma marca respeitada no mercado educacional. </p>
+<h4 id="resumo-da-parte-interessada">Resumo da Parte Interessada</h4>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Nome</th>
+            <th style="text-align:center">Representa</th>
+            <th style="text-align:center">Função</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Estudantes Pré-Vestibulandos</td>
+            <td style="text-align:center">Estudantes que se preparam para vestibulares e exames de admissão.</td>
+            <td style="text-align:center">Utilizam a plataforma para acessar informações e gerenciar o estudo.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Universidades e Instituições de Ensino</td>
+            <td style="text-align:center">Instituições que oferecem cursos e vestibulares.</td>
+            <td style="text-align:center">Fornecem dados atualizados sobre vestibulares e cursos; colaboram na
+                integração de dados.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Equipe de Desenvolvimento</td>
+            <td style="text-align:center">Desenvolvedores e engenheiros de software da equipe da FocaVest.</td>
+            <td style="text-align:center">Documentar, desenvolver, testar e implementar a plataforma.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Equipe de Marketing</td>
+            <td style="text-align:center">Profissionais responsáveis pela promoção e divulgação da plataforma.</td>
+            <td style="text-align:center">Criar e executar estratégias de marketing para atrair e engajar os usuários.
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Mentores e Professores</td>
+            <td style="text-align:center">Educadores e conselheiros que orientam os estudantes.</td>
+            <td style="text-align:center">Oferecem suporte e conselhos aos usuários da plataforma e podem fornecer
+                feedback sobre funcionalidades.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Equipe de Suporte ao Cliente</td>
+            <td style="text-align:center">Equipe responsável pelo suporte técnico e atendimento ao usuário.</td>
+            <td style="text-align:center">Resolver problemas técnicos e oferecer assistência aos usuários da plataforma.
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Reguladores de Dados</td>
+            <td style="text-align:center">Entidades que garantem conformidade com a proteção de dados.</td>
+            <td style="text-align:center">Garantir que a plataforma cumpra as regulamentações de proteção de dados, como
+                a LGPD.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Comunidade de Ex-Alunos</td>
+            <td style="text-align:center">Antigos estudantes que podem fornecer conselhos e orientações.</td>
+            <td style="text-align:center">Contribuir com dicas e suporte através de fóruns e grupos de discussão na
+                plataforma.</td>
+        </tr>
+    </tbody>
+</table>
+<h4 id="resumo-de-usu-rios">Resumo de Usuários</h4>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Nome</th>
+            <th style="text-align:center">Descrição</th>
+            <th style="text-align:center">Parte Interessada</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Estudante Pré-Vestibulando</td>
+            <td style="text-align:center">Usuário principal que acessa a plataforma para obter informações sobre
+                vestibulares e gerenciar seu estudo.</td>
+            <td style="text-align:center">Estudantes Pré-Vestibulandos</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Mentor/Professor</td>
+            <td style="text-align:center">Educador ou conselheiro que usa a plataforma para orientar e apoiar
+                estudantes, fornecendo feedback e conselhos.</td>
+            <td style="text-align:center">Mentores e Professores</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Administrador da Plataforma</td>
+            <td style="text-align:center">Responsável pela gestão e manutenção do sistema, incluindo a atualização de
+                dados e suporte ao usuário.</td>
+            <td style="text-align:center">Equipe de Desenvolvimento e Suporte</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Representante Universitário</td>
+            <td style="text-align:center">Profissional de instituições de ensino que fornece e atualiza informações
+                sobre cursos e vestibulares na plataforma.</td>
+            <td style="text-align:center">Universidades e Instituições de Ensino</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Ex-Aluno/Voluntário</td>
+            <td style="text-align:center">Antigo estudante que contribui com dicas e orientações na comunidade da
+                plataforma.</td>
+            <td style="text-align:center">Comunidade de Ex-Alunos</td>
+        </tr>
+    </tbody>
+</table>
+<h4 id="ambiente-do-usu-rio">Ambiente do Usuário</h4>
+<p><strong>Número de Pessoas Envolvidas</strong>: </p>
+<ul>
+    <li>
+        <p><strong>Estudantes</strong>: Principal usuário, individualmente envolvido na preparação para vestibulares.
+        </p>
+    </li>
+    <li>
+        <p><strong>Mentores e Professores</strong>: Podem estar envolvidos na orientação e suporte. </p>
+    </li>
+</ul>
+<p><strong>Tempo e Frequência das Tarefas</strong>: </p>
+<ul>
+    <li>
+        <p><strong>Loop de Tarefa</strong>: Estudantes frequentemente revisam informações e ajustam seus planos de
+            estudo. O ciclo pode variar, mas normalmente envolve revisão diária ou semanal. </p>
+    </li>
+    <li>
+        <p><strong>Tempo Gastos</strong>: Aproximadamente 1-3 horas por dia dedicadas ao estudo e à pesquisa de
+            informações sobre vestibulares. </p>
+    </li>
+</ul>
+<p><strong>Restrições de Ambiente</strong>: </p>
+<ul>
+    <li>
+        <p><strong>Dispositivos Remotos</strong>: Usuários podem acessar a plataforma de qualquer lugar, incluindo em
+            casa, em deslocamentos, ou em locais de estudo. </p>
+    </li>
+    <li>
+        <p><strong>Trabalho e Estudos</strong>: Muitos usuários têm horários flexíveis ou variáveis devido a trabalho ou
+            atividades escolares. </p>
+    </li>
+</ul>
+<p><strong>Plataformas de Sistema em Uso</strong>: </p>
+<ul>
+    <li>
+        <p><strong>Web</strong>: Navegadores modernos em desktops e laptops. </p>
+    </li>
+    <li>
+        <p><strong>Móveis</strong>: Dispositivos Android e iOS. </p>
+    </li>
+</ul>
+<p><strong>Plataformas Futuras Planejadas</strong>: </p>
+<ul>
+    <li><strong>Atualizações</strong>: Não há plataformas futuras específicas planejadas, mas a plataforma deve ser
+        compatível com novas versões de sistemas operacionais. </li>
+</ul>
+<p><strong>Outros Aplicativos em Uso</strong>: </p>
+<ul>
+    <li>
+        <p><strong>Aplicativos de Calendário e Planejamento</strong>: Para agendamento e organização. </p>
+    </li>
+    <li>
+        <p><strong>Plataformas Educacionais</strong>: Para acessar materiais de estudo e cursos preparatórios. </p>
+    </li>
+</ul>
+<p><strong>Integração Necessária</strong>: </p>
+<ul>
+    <li>
+        <p><strong>Calendários e Planejadores</strong>: Integração para sincronizar cronogramas de estudo. </p>
+    </li>
+    <li>
+        <p><strong>Plataformas Educacionais</strong>: Possível integração para acesso direto a materiais e recursos
+            adicionais. </p>
+    </li>
+</ul>
+<h4 id="perfil-dos-envolvidos">Perfil dos Envolvidos</h4>
+<h5 id="equipe-de-desenvolvimento">Equipe de Desenvolvimento</h5>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Representantes</th>
+            <th style="text-align:center">LMF, LOK, RAC</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center"><strong>Descrição</strong></td>
+            <td style="text-align:center">Desenvolvedores.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Tipo</strong></td>
+            <td style="text-align:center">Estudantes da UFU da disciplina de Projeto e desenvolvimento de Sistemas I.
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Responsabilidade</strong></td>
+            <td style="text-align:center">Desenvolvimento, documentação, implementação e Testes do software.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Critérios de Sucesso</strong></td>
+            <td style="text-align:center">Concluir devidamente o software e disponibilizá-lo ao público-alvo.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Envolvimento</strong></td>
+            <td style="text-align:center">Alto.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Problemas/Comentários</strong></td>
+            <td style="text-align:center">Inexperiência em relação às linguagens, metodologias e paradigmas que serão
+                aplicadas ao projeto.</td>
+        </tr>
+    </tbody>
+</table>
+<h5 id="equipe-de-gest-o-de-projeto">Equipe de Gestão de Projeto</h5>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Representantes</th>
+            <th style="text-align:center">LMF, LOK, RAC, JVBCT</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center"><strong>Descrição</strong></td>
+            <td style="text-align:center">Gerenciamento de projeto.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Tipo</strong></td>
+            <td style="text-align:center">Estudantes da UFU da disciplina de Projeto e desenvolvimento de Sistemas I.
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Responsabilidade</strong></td>
+            <td style="text-align:center">Coordenar, auxiliar e orientar a equipe de desenvolvimento de software, além
+                de fundamentar o projeto.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Critérios de Sucesso</strong></td>
+            <td style="text-align:center">Gerir adequadamente o desenvolvimento, tratar riscos e entregar o produto.
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Envolvimento</strong></td>
+            <td style="text-align:center">Alto.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Problemas/Comentários</strong></td>
+            <td style="text-align:center">Inexperiência no processo de gestão, documentação e desenvolvimento de
+                projetos.</td>
+        </tr>
+    </tbody>
+</table>
+<h4 id="perfil-dos-usu-rios">Perfil dos Usuários</h4>
+<p>Estudantes de nível de ensino médio que almejam ingressar na universidade através dos diferentes vestibulares
+    disponíveis, estes poderão utilizar a plataforma para acessar documentos, informações relevantes, gerenciar planos
+    de estudo personalizados, agenda, notificações e integração com outras aplicações de gerenciamento de agenda.</p>
+<h4 id="principais-necessidades-dos-usu-rios-e-dos-envolvidos">Principais Necessidades dos Usuários e dos Envolvidos
+</h4>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Necessidade</th>
+            <th style="text-align:center">Interesse</th>
+            <th style="text-align:center">Solução Proposta</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center"><strong>Centralização de Informações</strong></td>
+            <td style="text-align:center">Estudantes precisam de um único local para todas as informações sobre
+                vestibulares e cursos.</td>
+            <td style="text-align:center">Criar uma plataforma que agregue datas de vestibulares e detalhes de cursos em
+                um único local acessível.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Organização dos Estudos</strong></td>
+            <td style="text-align:center">A falta de ferramentas para planejamento dificulta a preparação eficiente.
+            </td>
+            <td style="text-align:center">Implementar ferramentas de cronograma e lembretes para ajudar na organização
+                do estudo.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Suporte e Orientação</strong></td>
+            <td style="text-align:center">Estudantes e ex-alunos precisam de conselhos e apoio para a preparação.</td>
+            <td style="text-align:center">Oferecer fóruns e grupos de discussão para troca de dicas e experiências entre
+                usuários.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Atualização de Dados</strong></td>
+            <td style="text-align:center">Informações desatualizadas levam a erros na preparação.</td>
+            <td style="text-align:center">Integrar com sistemas de universidades para garantir que os dados sobre
+                vestibulares sejam sempre atualizados.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center"><strong>Acesso Flexível e Intuitivo</strong></td>
+            <td style="text-align:center">Necessidade de acesso fácil em diferentes dispositivos.</td>
+            <td style="text-align:center">Disponibilizar a plataforma em navegadores web e, se aplicável, em aplicativos
+                móveis para acesso fácil.</td>
+        </tr>
+    </tbody>
+</table>
+<h3 id="vis-o-geral-do-produto">Visão Geral do Produto</h3>
+<p><strong>Produto Independente ou Componente</strong> </p>
+<ul>
+    <li>
+        <p><strong>Independente</strong>: A FocaVest é uma plataforma autônoma para informações de vestibulares e gestão
+            de estudos. </p>
+    </li>
+    <li>
+        <p><strong>Componente</strong>: Pode se integrar a sistemas universitários e plataformas educacionais via APIs
+            para dados atualizados e recursos adicionais. </p>
+    </li>
+</ul>
+<p><strong>Interações com Outros Sistemas</strong> </p>
+<ul>
+    <li>
+        <p><strong>Sistemas Universitários</strong>: Recebe dados sobre vestibulares e cursos via API. </p>
+    </li>
+    <li>
+        <p><strong>Plataformas Educacionais</strong>: Integra materiais de estudo e recursos através de APIs. </p>
+    </li>
+</ul>
+<p><strong>Diagrama de Casos de Uso</strong> </p>
+<ul>
+    <li>
+        <p><strong>Usuário (Pré-Vestibulando)</strong>: Acessa informações e utiliza ferramentas de estudo. </p>
+    </li>
+    <li>
+        <p><strong>Sistema Universitário</strong>: Fornece dados via API. </p>
+    </li>
+    <li>
+        <p><strong>Plataforma Educacional</strong>: Oferece recursos adicionais via API. </p>
+    </li>
+    <li>
+        <p><strong>FocaVest</strong>: Centraliza e organiza informações, fornece ferramentas e suporte. </p>
+    </li>
+</ul>
+<h4 id="resumo-das-capacidades">Resumo das Capacidades</h4>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Benefício para o cliente</th>
+            <th style="text-align:center">Recursos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">Centralização de Informações</td>
+            <td style="text-align:center">Dados sobre datas de vestibulares e detalhes de cursos.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Organização de Estudos</td>
+            <td style="text-align:center">Ferramentas de planejamento, cronogramas e lembretes.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Suporte Comunitário</td>
+            <td style="text-align:center">Fóruns e grupos para troca de dicas e experiências.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Atualização Contínua de Dados</td>
+            <td style="text-align:center">Integração com sistemas de universidades para dados atualizados.</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">Acesso Flexível</td>
+            <td style="text-align:center">Disponível em navegadores web e, se aplicável, em aplicativos móveis.</td>
+        </tr>
+    </tbody>
+</table>
+<h4 id="licenciamento-e-instala-o">Licenciamento e Instalação</h4>
+<p><strong>Licenciamento e Segurança</strong>: A FocaVest não requer licenciamento específico, já que será acessada via
+    web e não precisa de serialização ou licenciamento de rede. Implementaremos criptografia e autenticação de usuário
+    para garantir a segurança dos dados. </p>
+<p><strong>Instalação e Distribuição</strong>: A plataforma será acessada diretamente através de navegadores web, sem
+    necessidade de instalação local. Se aplicativos móveis forem desenvolvidos, serão disponibilizados nas lojas de
+    aplicativos (Google Play e Apple App Store) para um download simples e intuitivo. </p>
+<p><strong>Impacto no Desenvolvimento</strong>: O desenvolvimento considerará a segurança desde o início, e para a
+    versão web, não há necessidade de separação do software de instalação. Para aplicativos móveis, seguiremos as
+    diretrizes das lojas para distribuição e atualizações. </p>
+<h3 id="recursos-do-produto">Recursos do Produto</h3>
+<ul>
+    <li>
+        <p><strong>Central de Informações</strong>: Dados sobre datas de vestibulares e cursos. </p>
+    </li>
+    <li>
+        <p><strong>Gestão de Estudos</strong>: Cronogramas e lembretes para organizar o estudo. </p>
+    </li>
+    <li>
+        <p><strong>Comunidade e Suporte</strong>: Fóruns e grupos para dicas e conselhos. </p>
+    </li>
+    <li>
+        <p><strong>Integração com Instituições</strong>: Dados atualizados de universidades. </p>
+    </li>
+    <li>
+        <p><strong>Acesso Web e Móvel</strong>: Disponível em navegadores e, se aplicável, em aplicativos móveis.</p>
+    </li>
+</ul>
+<h3 id="restri-es">Restrições</h3>
+<ul>
+    <li>
+        <p><strong>Acesso à Internet</strong>: Requer conexão contínua com a internet para acesso à plataforma. </p>
+    </li>
+    <li>
+        <p><strong>Compatibilidade de Navegador</strong>: Pode haver limitações de funcionalidade em navegadores
+            desatualizados. </p>
+    </li>
+    <li>
+        <p><strong>Privacidade dos Dados</strong>: Necessário compliance com regulamentos de proteção de dados, como
+            LGPD. </p>
+    </li>
+    <li>
+        <p><strong>Atualizações de Dados</strong>: Dependente da colaboração das instituições de ensino para informações
+            atualizadas. </p>
+    </li>
+    <li>
+        <p><strong>Recursos Móveis</strong>: Aplicativos móveis, se desenvolvidos, devem seguir diretrizes das lojas de
+            aplicativos.</p>
+        <h3 id="refer-ncia">Referência</h3>
+        <p><a
+                href="https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/lifecycle-management/6.0.3?topic=requirements-vision-document">&#128195;
+                https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/lifecycle-management/6.0.3?topic=requirements-vision-document</a>
+        </p>
+    </li>
+</ul>
