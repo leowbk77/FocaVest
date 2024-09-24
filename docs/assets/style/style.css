@@ -156,13 +156,62 @@ footer p a {
         padding: .1rem 20rem;
     }
 
+    @media only screen and (max-width: 48rem) {
+        table {
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+        }
+    
+        table thead, table tbody, table, th {
+            display: block;
+        }
+    
+        table thead th:last-child {
+            border-bottom: none;
+        }
+        
+        table thead {
+            float: left;
+        }
+    
+        table tbody {
+            width: auto;
+            position: relative;
+            overflow-x: auto;
+        }
+    
+        table td, table th {
+            vertical-align: middle;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-overflow: ellipsis;
+        }
+    
+        table thead th {
+            text-align: left;
+        }
+    
+        table tbody tr {
+            display: table-cell;
+        }
+    
+        table tbody td {
+            display: block;
+            text-align: center;
+        }
+        
+    }
     /* tabela de base:
     https://codepen.io/florantara/pen/dROvdb?editors=1100
     */
+    
     table {
-        margin: auto;
         border: .1rem solid var(--table-background);
         border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
     }
 
     table td, table th {
@@ -178,52 +227,6 @@ footer p a {
     table tr:nth-child(even) {
         background: white;
     }
-
-    /* RESPONSIVA
-
-    table {
-        display: block;
-        width: 100%;
-    }
-
-    table thead, table tbody, table, th {
-        display: block;
-    }
-
-    table thead th:last-child {
-        border-bottom: none;
-    }
-    
-    table thead {
-        float: left;
-    }
-
-    table tbody {
-        width: auto;
-        position: relative;
-        overflow-x: auto;
-    }
-
-    table td, table th {
-        vertical-align: middle;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-overflow: ellipsis;
-    }
-
-    table thead th {
-        text-align: left;
-    }
-
-    table tbody tr {
-        display: table-cell;
-    }
-
-    table tbody td {
-        display: block;
-        text-align: center;
-    }*/
 }
 
 /* Plano metodologico assets n colors*/
