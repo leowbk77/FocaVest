@@ -275,6 +275,22 @@ footer p a {
     }
 }
 
+/* PROTO */
+.proto {
+    width: 20em;
+    height: 50em;
+        
+    @media only screen and (min-width: 30rem) {
+        width: 30em;
+        height: 50em;
+    }
+        
+    @media only screen and (min-width: 64rem) {
+        width: 50em;
+        height: 50em;
+    }
+}
+
 /* MOBILE SMALL 320p*/
 @media only screen and (min-width: 20rem) {
 }
