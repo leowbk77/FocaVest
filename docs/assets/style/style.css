@@ -2,10 +2,12 @@
 :root {
     --teste: #fff;
     --slate: #0e0f25;
-    --card-color-frst: #add8e6;
+    --card-color-frst: #aad4c8;
     --card-color-scnd: #f2f2f2;
     --table-background: #373737;
 }
+
+@import url('./fonts/OpenSans.ttf');
 
 body {
     min-height: 100vh;
@@ -16,6 +18,9 @@ body {
 
 /* HEADER */
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
     width: 100%;
 }
@@ -23,8 +28,14 @@ header {
 header h1 {
     color: white;
     margin: 0;
-    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
     text-align: center;
+}
+
+.logo-header {
+    width: 10em;
+    height: 10em;
 }
 
 /* MAIN */
@@ -147,6 +158,7 @@ footer p a {
 .content-section {
     color: black;
     padding: .1rem .2rem;
+    font-family: sans-serif;
 
     @media only screen and (min-width: 30rem) {
         padding: .1rem 10rem;
