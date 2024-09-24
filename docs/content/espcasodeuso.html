@@ -1,0 +1,191 @@
+<h3 id="hist-rico-de-revis-es">Histórico de Revisões</h3>
+<table>
+    <thead>
+        <tr>
+            <th style="text-align:center">Versão</th>
+            <th style="text-align:center">Data</th>
+            <th style="text-align:center">Descrição</th>
+            <th style="text-align:center">Autor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">1.0</td>
+            <td style="text-align:center">12/09/2024</td>
+            <td style="text-align:center">Especificações de Casos de Uso</td>
+            <td style="text-align:center">LMF, JVBC, RAC, LOK</td>
+        </tr>
+    </tbody>
+</table>
+<h3 id="sum-rio">Sumário</h3>
+<ol>
+    <li><a href="#caso-de-uso">Descrição do Caso de Uso</a></li>
+    <li><a href="#atores">Atores</a></li>
+    <li><a href="#precondi-es">Precondições</a></li>
+    <li><a href="#p-s-condi-es">Pós-Condições</a></li>
+    <li><a href="#fluxo-de-eventos">FLuxo de Eventos</a>
+        5.1. <a href="#fluxo-b-sico-principal">Fluxo Básico</a>
+        5.2. <a href="#fluxos-alternativos">Fluxos Alternativos</a></li>
+    <li><a href="#refer-ncias">Referências</a></li>
+</ol>
+<h3 id="caso-de-uso">Caso de uso</h3>
+<h4 id="descri-o-do-caso-de-uso">Descrição do Caso de Uso</h4>
+<p>O FocaVest é um sistema online que auxilia vestibulandos a se prepararem para os vestibulares. A plataforma oferece
+    diversas funcionalidades, como: </p>
+<p>Criação de agendas personalizadas: Os usuários podem adicionar as datas dos vestibulares de seu interesse e
+    acompanhar o cronograma de estudos. </p>
+<p>Guias de estudo personalizados: O sistema oferece materiais de estudo adaptados ao perfil e às necessidades de cada
+    usuário. </p>
+<p>Ferramentas de acompanhamento: Os usuários podem acompanhar seu desempenho em simulados e exercícios, além de receber
+    feedback personalizado. </p>
+<p>Comunidade: A plataforma oferece um espaço para que os usuários possam tirar dúvidas, trocar experiências e se
+    conectar com outros estudantes.</p>
+<h4 id="atores">Atores</h4>
+<p><strong>Pré-vestibulando</strong>
+    <strong>Administrador</strong>
+    <strong>Professor/Tutor (opcional)</strong>
+</p>
+<h4 id="precondi-es">Precondições</h4>
+<p><strong>O usuário possui uma conta ativa no sistema:</strong>
+    O usuário deve ter se cadastrado e criado um perfil no FocaVest.</p>
+<p><strong>O vestibular desejado está cadastrado no sistema:</strong>
+    O administrador do sistema deve ter previamente cadastrado o vestibular em questão, incluindo informações como nome
+    da instituição, data, cidade, etc.</p>
+<p><strong>O usuário está autenticado no sistema:</strong>
+    O usuário deve estar logado em sua conta para realizar a ação.</p>
+<p><strong>A agenda do usuário não estar cheia:</strong>
+    A agenda do usuário deve ter capacidade para adicionar mais eventos (vestibulares). </p>
+<p><strong>O usuário possui permissão para adicionar eventos à agenda:</strong>
+    Essa pré-condição pode ser relevante caso existam diferentes tipos de usuários com diferentes níveis de acesso.</p>
+<h4 id="p-s-condi-es">Pós-Condições</h4>
+<p><strong>O vestibular selecionado é adicionado à agenda do usuário:</strong>
+    A data do vestibular, o nome da instituição e outras informações relevantes são incluídas na agenda do usuário, na
+    data e horário especificados.</p>
+<p><strong>A agenda do usuário é atualizada:</strong>
+    A lista de eventos na agenda do usuário é atualizada para refletir a adição do novo vestibular.</p>
+<p><strong>O sistema gera uma notificação para o usuário:</strong>
+    O usuário recebe uma notificação (por e-mail, aplicativo, etc.) confirmando a adição do vestibular à agenda.</p>
+<p><strong>O sistema registra a ação em um log:</strong>
+    A ação de adicionar um vestibular à agenda é registrada em um log de atividades para fins de auditoria e análise.
+</p>
+<h4 id="fluxo-de-eventos">Fluxo de Eventos</h4>
+<h5 id="fluxo-b-sico-principal-">Fluxo Básico (Principal)</h5>
+<p><strong>Adicionar um Vestibular à Agenda (Pré-Vestibulando)</strong></p>
+<p>PASSOS: </p>
+<ol>
+    <li>
+        <p><strong>O usuário acessa a seção &quot;Minha Agenda&quot;.</strong>
+            O usuário navega até a área da plataforma destinada à gestão de sua agenda pessoal. </p>
+    </li>
+    <li>
+        <p><strong>O usuário clica no botão &quot;Adicionar Vestibular&quot;.</strong>
+            O usuário localiza e interage com o elemento visual que inicia o processo de adição de um novo vestibular.
+        </p>
+    </li>
+    <li>
+        <p><strong>O sistema apresenta uma lista ou campo de busca para o vestibular.</strong>
+            O sistema exibe uma interface que permite ao usuário pesquisar ou selecionar o vestibular desejado a partir
+            de uma lista pré-definida. </p>
+    </li>
+    <li>
+        <p><strong>O usuário seleciona o vestibular desejado.</strong>
+            Após localizar o vestibular, o usuário confirma sua escolha, indicando ao sistema qual vestibular será
+            adicionado à agenda. </p>
+    </li>
+</ol>
+<h5 id="fluxos-alternativos">Fluxos Alternativos</h5>
+<p><strong>Usuário Adiciona um Vestibular Duplicado (Pré-Vestibulando)</strong>
+    PASSOS: </p>
+<ol>
+    <li>
+        <p><strong>O usuário acessa a seção &quot;Minha Agenda&quot; e clica em &quot;Adicionar
+                Vestibular&quot;.</strong>
+            (Mesmos passos 1 e 2 do fluxo principal)</p>
+    </li>
+    <li>
+        <p><strong>O usuário pesquisa ou seleciona o vestibular.</strong>
+            O usuário encontra o vestibular desejado e o seleciona. </p>
+    </li>
+    <li>
+        <p><strong>O sistema verifica se o vestibular já está na agenda do usuário.</strong>
+            O sistema consulta a agenda do usuário para verificar se o vestibular selecionado já está cadastrado. </p>
+    </li>
+    <li>
+        <p><strong>O sistema exibe uma mensagem de alerta.</strong>
+            O sistema informa ao usuário que o vestibular já está cadastrado em sua agenda. </p>
+    </li>
+    <li>
+        <p><strong>O usuário pode:</strong>
+            a. <strong>Editar o vestibular existente:</strong> O sistema direciona o usuário para a tela de edição do
+            vestibular, onde ele pode alterar as informações, se necessário.
+            b. <strong>Cancelar a operação:</strong> O usuário pode desistir de adicionar o vestibular.</p>
+    </li>
+</ol>
+<p><strong>O usuário tenta adicionar um vestibular que já ocorreu (Pré-Vestibulando)</strong>
+    PASSOS:</p>
+<ol>
+    <li>
+        <p><strong>O usuário acessa a seção &quot;Minha Agenda&quot; e clica em &quot;Adicionar
+                Vestibular&quot;.</strong> (Mesmos passos 1 e 2 do fluxo principal) </p>
+    </li>
+    <li>
+        <p><strong>O usuário pesquisa ou seleciona o vestibular.</strong>
+            O usuário encontra o vestibular desejado e o seleciona. </p>
+    </li>
+    <li>
+        <p><strong>O sistema verifica a data do vestibular.</strong>
+            O sistema compara a data do vestibular selecionado com a data atual. </p>
+    </li>
+    <li>
+        <p><strong>O sistema exibe uma mensagem de alerta.</strong>
+            O sistema informa ao usuário que a data do vestibular já passou. </p>
+    </li>
+    <li>
+        <p><strong>O usuário pode:</strong>
+            a. <strong>Corrigir a data:</strong> O usuário pode voltar e corrigir a data do vestibular.
+            b. <strong>Cancelar a operação:</strong> O usuário pode desistir de adicionar o vestibular.</p>
+    </li>
+</ol>
+<p><strong>Administrador remove vestibular do sistema (Administrador)</strong>
+    PASSOS: </p>
+<ol>
+    <li>
+        <p><strong>O usuário acessa a seção &quot;Minha Agenda&quot; e clica em &quot;Adicionar
+                Vestibular&quot;.</strong> (Mesmos passos 1 e 2 do fluxo principal) </p>
+    </li>
+    <li>
+        <p><strong>O usuário pesquisa ou seleciona o vestibular.</strong> O usuário encontra o vestibular desejado e o
+            seleciona. </p>
+    </li>
+    <li>
+        <p><strong>O sistema verifica se o vestibular está cadastrado.</strong> O sistema consulta o banco de dados para
+            verificar se o vestibular existe. </p>
+    </li>
+    <li>
+        <p><strong>O sistema verifica se o vestibular foi removido.</strong> O sistema verifica se o vestibular foi
+            removido por um administrador após a consulta inicial. </p>
+    </li>
+    <li>
+        <p><strong>O sistema exibe uma mensagem de erro.</strong> O sistema informa ao usuário que o vestibular não está
+            mais disponível. </p>
+    </li>
+    <li>
+        <p><strong>O usuário pode:</strong>
+            a. <strong>Realizar uma nova pesquisa:</strong> O usuário pode tentar encontrar outro vestibular.
+            b. <strong>Contactar o suporte:</strong> O usuário pode entrar em contato com o suporte técnico para obter
+            mais informações.</p>
+    </li>
+</ol>
+<h3 id="refer-ncias">Referências</h3>
+<p><a
+        href="https://pepsic.bvsalud.org/scielo.php?script=sci_arttext&amp;pid=S1983-34822009000200004#:~:text=O%20período%20que%20antecede%20o,gostam%20para%2C%20exclusivamente%2C%20estudar">https://pepsic.bvsalud.org/scielo.php?script=sci_arttext&amp;pid=S1983-34822009000200004#:~:text=O%20período%20que%20antecede%20o,gostam%20para%2C%20exclusivamente%2C%20estudar</a>.
+</p>
+<p><a
+        href="https://www.hospitaloswaldocruz.org.br/imprensa/releases/pressao-pre-vestibular-pode-afetar-saude-e-bem-estar-dos-estudantes/">https://www.hospitaloswaldocruz.org.br/imprensa/releases/pressao-pre-vestibular-pode-afetar-saude-e-bem-estar-dos-estudantes/</a>
+</p>
+<p><a
+        href="https://blog.mackenzie.br/vestibular/dicas-de-estudo/6-dicas-para-se-organizar-no-periodo-pre-vestibular/">https://blog.mackenzie.br/vestibular/dicas-de-estudo/6-dicas-para-se-organizar-no-periodo-pre-vestibular/</a>
+</p>
+<p><a
+        href="https://redacaonline.com.br/blog/dicas-para-montar-um-plano-de-estudos-para-os-vestibulares/">https://redacaonline.com.br/blog/dicas-para-montar-um-plano-de-estudos-para-os-vestibulares/</a>
+</p>

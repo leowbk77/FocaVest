@@ -1,5 +1,3 @@
-<h2 id="-_este-documento-ainda-est-em-produ-o_-">🛠 <em>Este documento ainda está em produção</em></h2>
-<hr>
 <h3 id="sum-rio">Sumário</h3>
 <ol>
     <li><a href="#introdu-o">Introdução</a></li>
@@ -158,11 +156,43 @@
 <p>Prioridade: <strong>Essencial</strong></p>
 <h3 id="requisitos-n-o-funcionais">Requisitos Não-Funcionais</h3>
 <h4 id="seguran-a">Segurança</h4>
+<p><strong>[NF001] Proteção de dados</strong></p>
+<p>O sistema deve oferecer proteção de dados pessoais e acadêmicos. Deve garantir criptografia para dados sensíveis e
+    camadas de segurança de acesso a contas e deve seguir conformidade com regulamentações de proteção de dados (como
+    GDPR) </p>
+<p>Casos de uso associados: todos. </p>
 <h4 id="usabilidade">Usabilidade</h4>
+<p><strong>[NF002] Interface do Usuário</strong></p>
+<p>A interface do usuário deve ser amigável e intuitiva. Deve considerar a dificuldade de usuários com novas tecnologias
+    e embutir um conceito minimalista e praticidade em design de interface gráfica. </p>
+<p>Casos de uso associados: todos.</p>
+<p><strong>[NF003] Existência de guias e ajuda</strong></p>
+<p>O sistema deve disponibilizar um guia ou help, para tirar dúvidas do usuário, em relação as funcionalidades e
+    navegabilidade do sistema. Também deve conter telas de erros e avisos com informações claras e concisas sobre
+    eventuais problemas e falhas que o usuário encontre ao usar o sistema. </p>
 <h4 id="confiabilidade">Confiabilidade</h4>
+<p><strong>[NF004] Disponibilidade</strong></p>
+<p>O sistema tem que estar sempre disponível (24 horas por dia). </p>
+<p>Casos de uso associados: todos </p>
+<p><strong>[NF005] Consistência dos dados</strong></p>
+<p>Caso ocorra algum erro no processamento de uma transação, o programa deve retornar para um estado anterior
+    consistente, sem que haja o comprometimento da coerência dos dados armazenados.</p>
 <h4 id="desempenho">Desempenho</h4>
+<p><strong>[NF006] Respostas rápidas</strong></p>
+<p>O sistema deve conferir respostas rápidas e eficientes, mesmo que com carga alta de usuário. O tempo de resposta deve
+    ser menor que 5 segundos. </p>
+<p>Casos de uso associados: </p>
 <h4 id="manuten-o-e-atualiaza-o">Manutenção e Atualiazação</h4>
+<p><strong>[NF007] Manutenção e atualização</strong></p>
+<p>O sistema deve oferecer um sistema de backup e recuperação de dados, além de facilidade para atualização e manutenção
+    do sistema </p>
+<p>Casos de uso associados: todos. </p>
 <h4 id="escalabilidade">Escalabilidade</h4>
+<p><strong>[NF008] Escalonamento</strong></p>
+<p>Capacidade de suportar aumento de usuário e números de acesso ao sistema, de forma que haja facilidade em fazer a
+    distribuição do sistema em vários servidores. </p>
+<p><strong>[NF009] Flexibilidade</strong></p>
+<p>Flexibilidade para adicionar novas funcionalidades no futuro, sem maiores problemas ou dores de cabeça. </p>
 <h3 id="requisitos-de-interface">Requisitos de Interface</h3>
 <p>Esta seção apresenta em detalhes os requisitos de interface do sistema. Especificam como um sistema de software
     interage com outros sistemas, usuários e hardware. Esses requisitos são fundamentais para garantir que o software
