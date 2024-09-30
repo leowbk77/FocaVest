@@ -288,10 +288,17 @@ footer p a {
 }
 
 /* PROTO */
+#figma-prototype {
+    display: flex;
+    flex-direction: column;
+}
+
 .proto {
     width: 20em;
     height: 50em;
-        
+    margin-bottom: 5rem;
+    align-self: center;
+    
     @media only screen and (min-width: 30rem) {
         width: 30em;
         height: 50em;
